@@ -1,4 +1,3 @@
-
 // const User = require('../models/1index').getModel('user')
 const User = require('../models/user')
 const user = {
@@ -8,10 +7,14 @@ const user = {
      * @params: { Object } userData
      * @return: { Object | null }
      */
-    async login () {
-        let result = await User.showTables()
-        console.log(result)
-        return result
+    async login() {
+        // let result = await User.showTables()
+        // console.log(result)
+        return {
+            id: 6280,
+            name: 'testUser_name'
+        }
+        // return result
     }
 }
 

@@ -15,7 +15,7 @@ const { corsHandler } = require('./middlewares/cors')
 
 const app = new Koa()
 // console.log(process.env.NODE_ENV)
-// Logger
+// LoggerF
 app.use(loggerMiddleware)
 
 // Error Handler

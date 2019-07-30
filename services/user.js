@@ -1,20 +1,9 @@
 // const User = require('../models/1index').getModel('user')
 const User = require('../models/user')
 const user = {
-    /**
-     * @Description: ��¼
-     * @date 2019/5/30
-     * @params: { Object } userData
-     * @return: { Object | null }
-     */
-    async login() {
-        // let result = await User.showTables()
-        // console.log(result)
-        return {
-            id: 6280,
-            name: 'testUser_name'
-        }
-        // return result
+    async login({username, password}) {
+        let users = await User.getUsersByName({username, password})
+        return users;
     }
 }
 
